@@ -40,7 +40,24 @@ public class Main {
          }
       }
 
+      // LOOPS & STRINGS
+      // Use a loop to iterate through each character
+      // in a String object (TRAVERSAL)
       
+      // Use a FOR loop to "visit every char"
+      String name = "katerina";
+      int finalIndex = name.length() - 1;
+      System.out.println("Final Index: " + finalIndex);
+
+      // Build a reversed String using loop
+      String reversed = ""; 
+      for (int i = finalIndex; i >= 0; i--) {
+         System.out.println("Current Index: " + i);
+         String currentLetter = name.substring(i, i+1); // char at index i
+         System.out.println("Current Letter: " + currentLetter);
+         reversed += currentLetter; // add char to reversed name
+      }
+      System.out.println("Your name backwards: " + reversed);
 
 
    } // END MAIN METHOD
